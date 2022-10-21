@@ -1,0 +1,47 @@
+@import '~antd/es/style/themes/default.less';
+
+.mapChart {
+  height: 452px;
+  padding-top: 24px;
+  img {
+    display: inline-block;
+    max-width: 100%;
+    max-height: 437px;
+  }
+}
+
+.pieCard :global(.pie-stat) {
+  font-size: 24px !important;
+}
+
+@media screen and (max-width: @screen-lg) {
+  .mapChart {
+    height: auto;
+  }
+}
+.chatboard {
+  display: grid;
+  grid-gap: 0.6rem;
+  width: auto;
+}
+
+.sent,
+.received {
+  min-width: 20rem;
+  padding: 1%;
+  border-radius: 0.6rem;
+}
+
+.received {
+  justify-self: left;
+  color: white;
+  background-color: #0a2472;
+}
+
+.sent {
+  align-content: right;
+  justify-self: right;
+  text-align: right;
+  background-color: #a6e1fa;
+}
+
